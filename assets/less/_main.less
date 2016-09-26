@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   font-family: @regular, Arial, sans-serif;
+  background-color: @black;
 }
 
 *, *:before, *:after {
@@ -12,14 +13,16 @@ html {
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  background-color: #ccc;
+  background-color: @darkgray;
 }
 
 #top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vh;
-  height: 100vw;
-  background-color: #aaa;
+  position: relative;
+  width: auto;
+//  height: 100vw;
+  background-color: @darkgray;
+}
+
+#top, #header, #main, #footer {
+  width: 100%;
 }

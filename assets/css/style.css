@@ -14,6 +14,7 @@
 html {
   box-sizing: border-box;
   font-family: robotoregular, Arial, sans-serif;
+  background-color: #000;
 }
 *,
 *:before,
@@ -23,13 +24,27 @@ html {
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  background-color: #ccc;
+  background-color: #333;
 }
 #top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vh;
-  height: 100vw;
-  background-color: #aaa;
+  position: relative;
+  width: auto;
+  background-color: #333;
+}
+#top,
+#header,
+#main,
+#footer {
+  width: 100%;
+}
+ul.navigation {
+  list-style-type: none;
+}
+ul.navigation li {
+  display: inline-block;
+  padding: 3px 5px;
+  border-bottom: 1px solid #04c;
+}
+ul.navigation a {
+  text-decoration: none;
 }
