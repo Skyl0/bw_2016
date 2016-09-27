@@ -118,7 +118,7 @@ p {
   min-height: 175px;
 }
 #bottom .wrapper {
-  padding: 0px;
+  padding: 0;
 }
 /*******************
 * Footer Definitions
@@ -127,7 +127,7 @@ p {
   clear: both;
 }
 #footer .wrapper .col-sm-12 {
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
 }
 /*******************
 * Menu Definitions
