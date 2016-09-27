@@ -16,10 +16,10 @@ add_action('init', 'register_my_menus');
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bastian Werner Wetterfotografie (c) Alle Rechte vorbehalten 2016</title>
+  <!-- begin header --><?php wp_head(); ?><!-- end header wp -->
   <!-- Bootstrap -->
-  <link href="../wordpress/wp-content/themes/bw_2016/assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../wordpress/wp-content/themes/bw_2016/assets/css/style.css" rel="stylesheet">
+  <link href="<? echo get_template_directory_uri() ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<? echo get_template_directory_uri() ?>/style.css" rel="stylesheet">
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>

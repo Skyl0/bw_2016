@@ -1,20 +1,7 @@
 <?php
 /**
  * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * e.g., it puts together the home page when no home.php file exists.
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
  */
-
-
 
 get_header();
 ?>
@@ -22,11 +9,11 @@ get_header();
   <div id="top">
     <div class="wrapper">
       <div id="logo">
-        <img src="../wordpress/wp-content/themes/bw_2016/assets/images/logo100px.png" alt="alt logo"/>
+        <img src="<? echo get_template_directory_uri() ?>/assets/images/logo100px.png" alt="alt logo"/>
       </div>
-      <div class="nav">
+      <div class="mainnav">
         <nav>
-         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+          <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
         </nav>
       </div>
       <div class="social">
@@ -34,17 +21,20 @@ get_header();
       </div>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="floatingbox">
-      <h1>Willkommen</h1>
-      <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte,
-        wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham
-        ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich
-        in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine
-        Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als
-        erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte
-        der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden
-        Blick den ihm doch wohlbekannten Apparat.</p>
+  <div class="floatb">
+    <div class="wrapper">
+      <div class="floatingbox">
+        <!-- excluded <h1>the_title('');</h1> -->
+        <div class="main-content">
+          <?php
+          if (have_posts()) {
+            while (have_posts()) {
+              the_post();
+              the_content();
+            }
+          } ?>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -72,43 +62,6 @@ get_header();
           verleumdet haben, denn
           ohne dass er etwas Böses getan hätte, wurde </p></div>
     </div>
-  </div>
-</div>
-<div id="bottom">
-  <div class="wrapper">
-    <div class="col-sm-4">
-      <div class="inner">
-        <ul class="bottom_nav">
-          <li><a href="/">Start</a></li>
-          <li><a href="/">Galerie</a></li>
-          <li><a href="/">Shop</a></li>
-          <li class="active"><a href="/">Über mich</a></li>
-          <li><a href="/">Workshops / Events</a></li>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/">Kalender</a></li>
-          <li><a href="/">Sonstiges</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="inner"><p>
-        Bastian Werner ist Fotograf und bla und blubb und bla und blubb und bla und blubb
-        und bla und blubb und bla und blubb und bla und blubb und bla und blubb und bla und blubb </p></div>
-    </div>
-    <div class="col-sm-4">
-      <div class="inner">
-        <ul class="imprint_menu">
-          <li><a href="/">Impressum</a></li>
-          <li><a href="/">Datenschutz</a></li>
-          <li><a href="/">Weitere Informationen</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="footer">
-  <div class="wrapper">
-    <div class="col-sm-12">&copy; Bastian Werner 2016</div>
   </div>
 </div>
 <?php get_footer(); ?>

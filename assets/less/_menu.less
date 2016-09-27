@@ -4,11 +4,11 @@
 * Menu Definitions
 ********************/
 
-.nav {
-  font-family: @regular;
+.mainnav {
+  font-family: @regular, Arial, sans-serif;
   height: 50px;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 18px;
   a {
     color: white;
   }
@@ -18,32 +18,63 @@
   }
 }
 
-ul.navigation {
+.mainnav ul {
   margin-left: 50px;
   position: relative;
-  top: 17px;
+  top: 14px;
 }
 
-ul.navigation {
+.mainnav ul {
   list-style-type: none;
 
   li {
     display: inline-block;
     padding: 3px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.0);
     margin-right: 15px;
     transition: all 500ms;
   }
 
-  li.active {
-    border-bottom: 1px solid rgba(255,255,255,0.5);
+  li {
+    &.current_page_item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
   }
-
   li:hover {
-    border-bottom: 1px solid rgba(255,255,255,0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
   }
 
   a {
     text-decoration: none;
   }
+}
+
+/**************
+ * Bottom menu
+ **************/
+
+#bottom .extra-menu ul {
+  list-style-type: none;
+  list-style-position: outside;
+  position: relative;
+  margin-left: -40px;
+}
+
+#bottom .extra-menu ul {
+  a {
+    color: @white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.0);
+    text-decoration: none;
+    padding: 3px 0;
+    display: block;
+  }
+
+  //.current_page_item a {
+  //  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  //}
+
+  a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+  }
+
 }
