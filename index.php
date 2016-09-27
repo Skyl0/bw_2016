@@ -1,24 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bastian Werner Wetterfotografie (c) Alle Rechte vorbehalten 2016</title>
-  <!-- Bootstrap -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * e.g., it puts together the home page when no home.php file exists.
+ *
+ * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
+ */
+
+get_header();
+?>
 <div id="header">
   <div id="top">
     <div class="wrapper">
       <div id="logo">
-        <img src="../tmp/assets/images/logo100px.png" alt="alt logo"/>
+        <img src="./assets/images/logo100px.png" alt="alt logo"/>
       </div>
       <div class="nav">
         <nav>
@@ -116,14 +118,4 @@
     <div class="col-sm-12">&copy; Bastian Werner 2016</div>
   </div>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- other external JS -->
-<script src="https://use.fontawesome.com/55ae683038.js"></script>
-<!-- internal JS -->
-<script src="assets/js/bootstrap.min.js"></script>
-<!-- self written JS -->
-<script src="assets/js/default.js"></script>
-<!-- end JS part -->
-</body>
-</html>
+<?php get_footer(); ?>
