@@ -14,26 +14,19 @@
  * @since Twenty Fifteen 1.0
  */
 
+
+
 get_header();
 ?>
 <div id="header">
   <div id="top">
     <div class="wrapper">
       <div id="logo">
-        <img src="./assets/images/logo100px.png" alt="alt logo"/>
+        <img src="../wordpress/wp-content/themes/bw_2016/assets/images/logo100px.png" alt="alt logo"/>
       </div>
       <div class="nav">
         <nav>
-          <ul class="navigation">
-            <li><a href="/">Start</a></li>
-            <li><a href="/">Galerie</a></li>
-            <li><a href="/">Shop</a></li>
-            <li class="active"><a href="/">Über mich</a></li>
-            <li><a href="/">Workshops / Events</a></li>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/">Kalender</a></li>
-            <li><a href="/">Sonstiges</a></li>
-          </ul>
+         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </nav>
       </div>
       <div class="social">
