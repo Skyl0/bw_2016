@@ -1,12 +1,46 @@
 // MENU Definitions
 
+/*******************
+* Menu Definitions
+********************/
+
+.nav {
+  font-family: @regular;
+  height: 50px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: @lightgrey;
+  }
+}
+
+ul.navigation {
+  margin-left: 50px;
+  position: relative;
+  top: 17px;
+}
+
 ul.navigation {
   list-style-type: none;
 
   li {
     display: inline-block;
-    padding: 3px 5px;
-    border-bottom: 1px solid @blue1;
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.0);
+    margin-right: 15px;
+    transition: all 500ms;
+  }
+
+  li.active {
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+
+  li:hover {
+    border-bottom: 1px solid rgba(255,255,255,0.9);
   }
 
   a {

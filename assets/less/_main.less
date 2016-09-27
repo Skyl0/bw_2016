@@ -1,28 +1,128 @@
-// main styles
+// Main Styles
+
+/***********************
+* General Definitions
+************************/
 
 html {
   box-sizing: border-box;
-  font-family: @regular, Arial, sans-serif;
-  background-color: @black;
+
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+body {
+  //background-color: @black;
+  background-image: url("../images/komposit_1.jpg");
+  // background-position: 80% center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: @regular, Arial, sans-serif;
+}
+
+div, p {
+  color: @white;
+}
+
 .wrapper {
-  width: 960px;
+  position: relative;
+  width: 940px;
   margin: 0 auto;
-  background-color: @darkgray;
+  padding: 20px;
+}
+
+/***********************
+* Top/Header Definitions
+************************/
+#header {
+  height: 100vh;
+}
+
+#logo {
+
+  img {
+    position: absolute;
+    top: 25px;
+    height: 50px;
+    width: auto;
+  }
 }
 
 #top {
   position: relative;
   width: auto;
-//  height: 100vw;
-  background-color: @darkgray;
+  height: 100px;
 }
 
 #top, #header, #main, #footer {
   width: 100%;
+}
+
+/*****************
+* Main Definitions
+******************/
+#main {
+  .wrapper {
+    padding: 0 !important;
+  }
+
+  h1 {
+    margin: 0 0 10px 0 !important;
+  }
+}
+
+#main {
+  .wrapper {
+    .col-sm-6 {
+      margin-bottom: 30px;
+    }
+    .inner {
+      background-color: @transparentblack;
+      padding: @stdpadding;
+      min-height: 175px;
+    }
+
+    .inner {
+      i.fa {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+/*******************
+* Bottom Definitions
+********************/
+#bottom {
+  .col-sm-4 {
+    margin-bottom: 30px;
+  }
+  .inner {
+    background-color: @transparentblack;
+    padding: @stdpadding;
+    min-height: 175px;
+  }
+
+  .wrapper {
+    padding: 0px;
+  }
+}
+
+/*******************
+* Footer Definitions
+********************/
+#footer  {
+  clear: both;
+
+}
+
+#footer {
+  .wrapper {
+    .col-sm-12 {
+      background-color: @transparentblack;
+    }
+  }
 }
