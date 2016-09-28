@@ -21,6 +21,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: @regular, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 div, p {
@@ -37,8 +38,12 @@ div, p {
 /***********************
 * Top/Header Definitions
 ************************/
-#header {
+.first #header {
   height: 100vh;
+}
+
+.follow #header {
+  height: auto;
 }
 
 #logo {
@@ -72,6 +77,11 @@ div, p {
   h1 {
     margin: 0 0 10px 0 !important;
   }
+
+  h2.panel-title {
+    margin: 0 0 10px 0 !important;
+    font-size: 18px;
+  }
 }
 
 #main {
@@ -91,6 +101,10 @@ div, p {
       }
     }
   }
+}
+
+.follow #main .col-sm-12 {
+  margin-bottom: 15px;
 }
 
 /*******************
@@ -115,12 +129,15 @@ div, p {
     margin: 0 0 10px 0;
   }
 }
-
+#bottom {
+  clear: both;
+}
 #bottom {
   position: relative;
   .wrapper {
+    position: relative;
     .col-sm-4 {
-
+      position: relative;
     }
   }
 }
@@ -131,7 +148,6 @@ div, p {
 #footer {
   clear: both;
   font-size: 18px;
-
 }
 
 #footer {
@@ -145,5 +161,24 @@ div, p {
 #footer {
   .wrapper {
     padding: 0 20px;
+    height: 75px;
+  }
+}
+
+.footer-left , .footer-right {
+  line-height: 40px;
+}
+
+.footer-right {
+  text-align: right;
+
+  i.fa {
+    position: relative;
+    bottom: -2px;
+    left: 20px;
+  }
+
+  a {
+    color: @white;
   }
 }

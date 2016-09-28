@@ -5,13 +5,13 @@
  * Description: WP-Header
  * Version : 0.1.0
  */
-include('./functions.php' );
 ?><!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bastian Werner Wetterfotografie - <? echo the_title() ?></title>
   <!-- begin header --><?php wp_head(); ?><!-- end header wp -->
   <!-- Bootstrap -->
   <link href="<? echo get_template_directory_uri() ?>/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -21,4 +21,3 @@ include('./functions.php' );
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body>

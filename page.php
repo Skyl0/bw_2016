@@ -1,10 +1,9 @@
 <?php
 /*
-* Template Name: first
+* Template Name: follow
 */
-
 get_header();
-?><body class="first">
+?><body class="follow">
 <div id="header">
   <div id="top">
     <div class="wrapper">
@@ -23,11 +22,10 @@ get_header();
       </div>
     </div>
   </div>
-  <div class="floatb">
+  <div id="main">
     <div class="wrapper">
-      <div class="floatingbox">
-        <!-- excluded <h1>the_title('');</h1> -->
-        <div class="main-content">
+      <div class="col-sm-12">
+        <div class="inner">
           <?php
           if (have_posts()) {
             while (have_posts()) {
@@ -40,28 +38,4 @@ get_header();
     </div>
   </div>
 </div>
-<div id="main">
-  <div class="wrapper">
-    <div class="col-sm-6">
-      <div class="inner">
-        <?php dynamic_sidebar('panel-home'); ?>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="inner">
-        <?php dynamic_sidebar('panel-home-2'); ?>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="inner">
-        <?php dynamic_sidebar('panel-home-3'); ?>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="inner">
-        <?php dynamic_sidebar('panel-home-4'); ?>
-      </div>
-    </div>
-  </div>
-</div>
-<?php get_footer(); ?>
+<? get_footer() ?>

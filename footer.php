@@ -7,29 +7,31 @@
   <div class="wrapper">
     <div class="col-sm-4">
       <div class="inner extra-menu">
-        <h2>Wähle einen Bereich</h2>
+        <h2>Men&uuml;punkte</h2>
         <?php wp_nav_menu(array('theme_location' => 'extra-menu')); ?>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="inner"><p>
-          Bastian Werner ist Fotograf und bla und blubb und bla und blubb und bla und blubb
-          und bla und blubb und bla und blubb und bla und blubb und bla und blubb und bla und blubb </p></div>
+      <div class="inner">
+        <?php dynamic_sidebar('short-bio'); ?>
+      </div>
     </div>
     <div class="col-sm-4">
-      <div class="inner">
-        <ul class="imprint_menu">
-          <li><a href="/">Impressum</a></li>
-          <li><a href="/">Datenschutz</a></li>
-          <li><a href="/">Weitere Informationen</a></li>
-        </ul>
+      <div class="inner extra-menu">
+        <h2>Rechtliches</h2>
+        <?php wp_nav_menu(array('theme_location' => 'imprint-menu')); ?>
       </div>
     </div>
   </div>
 </div>
 <div id="footer">
   <div class="wrapper">
-    <div class="col-sm-12">&copy; Bastian Werner 2016</div>
+    <div class="col-sm-6 footer-left">&copy; Bastian Werner 2016</div>
+    <div class="col-sm-6 footer-right">
+      <a href="#" class="scrollup-link">
+        <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
   </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

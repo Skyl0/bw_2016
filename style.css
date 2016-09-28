@@ -1,17 +1,16 @@
 /*
-
+*
 * Theme Name: BW_2016
 * Theme URI: http://skylo.de
 * Description: TBA
-* Version: 1.0
-
-* Author URI: http://skylo.de
-* Tags: bw_2016, skylo
-
+* Version: 0.1
+*
 * Author: Marc Ernst (CEO)
 * Company: SkyIT Webdesign - 64287 Darmstadt
 * Description: All Styles
 * Version : 0.2.0
+* Author URI: http://skylo.de
+* Tags: bw_2016, skylo
 **/
 /*******************
 * Fonts Definitions
@@ -60,15 +59,16 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: open_sansregular, Arial, sans-serif;
+  overflow-x: hidden;
 }
-/* line 26, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000326}}
+/* line 27, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000327}}
 div,
 p {
   color: #fff;
 }
-/* line 30, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000330}}
+/* line 31, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000331}}
 .wrapper {
   position: relative;
   width: 940px;
@@ -78,28 +78,33 @@ p {
 /***********************
 * Top/Header Definitions
 ************************/
-/* line 40, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000340}}
-#header {
+/* line 41, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000341}}
+.first #header {
   height: 100vh;
 }
-/* line 46, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000346}}
+/* line 45, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000345}}
+.follow #header {
+  height: auto;
+}
+/* line 51, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000351}}
 #logo img {
   position: absolute;
   top: 25px;
   height: 50px;
   width: auto;
 }
-/* line 54, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000354}}
+/* line 59, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000359}}
 #top {
   position: relative;
   width: auto;
   height: 100px;
 }
-/* line 60, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000360}}
+/* line 65, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000365}}
 #top,
 #header,
 #main,
@@ -109,82 +114,132 @@ p {
 /*****************
 * Main Definitions
 ******************/
-/* line 68, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000368}}
+/* line 73, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000373}}
 #main .wrapper {
   padding: 0 !important;
 }
-/* line 72, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000372}}
+/* line 77, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000377}}
 #main h1 {
   margin: 0 0 10px 0 !important;
 }
-/* line 79, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000379}}
+/* line 81, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000381}}
+#main h2.panel-title {
+  margin: 0 0 10px 0 !important;
+  font-size: 18px;
+}
+/* line 89, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000389}}
 #main .wrapper .col-sm-6 {
   margin-bottom: 30px;
 }
-/* line 82, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000382}}
+/* line 92, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000392}}
 #main .wrapper .inner {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   min-height: 175px;
 }
-/* line 89, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000389}}
+/* line 99, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\0000399}}
 #main .wrapper .inner i.fa {
   margin-right: 15px;
+}
+/* line 106, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003106}}
+.follow #main .col-sm-12 {
+  margin-bottom: 15px;
 }
 /*******************
 * Bottom Definitions
 ********************/
-/* line 100, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003100}}
+/* line 114, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003114}}
 #bottom .col-sm-4 {
   margin-bottom: 15px;
 }
-/* line 103, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003103}}
+/* line 117, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003117}}
 #bottom .inner {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   min-height: 175px;
 }
-/* line 109, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003109}}
+/* line 123, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003123}}
 #bottom .wrapper {
   padding: 0;
 }
-/* line 113, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003113}}
+/* line 127, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003127}}
 #bottom h2 {
   font-size: 18px;
   margin: 0 0 10px 0;
 }
-/* line 119, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003119}}
+/* line 132, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003132}}
 #bottom {
+  clear: both;
+}
+/* line 135, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003135}}
+#bottom {
+  position: relative;
+}
+/* line 137, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003137}}
+#bottom .wrapper {
+  position: relative;
+}
+/* line 139, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003139}}
+#bottom .wrapper .col-sm-4 {
   position: relative;
 }
 /*******************
 * Footer Definitions
 ********************/
-/* line 131, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003131}}
+/* line 148, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003148}}
 #footer {
   clear: both;
   font-size: 18px;
 }
-/* line 139, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003139}}
+/* line 155, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003155}}
 #footer .wrapper .col-sm-12 {
   padding: 0 15px 15px 15px;
 }
-/* line 146, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003146}}
+/* line 162, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003162}}
 #footer .wrapper {
   padding: 0 20px;
+  height: 75px;
+}
+/* line 168, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003168}}
+.footer-left,
+.footer-right {
+  line-height: 40px;
+}
+/* line 172, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003172}}
+.footer-right {
+  text-align: right;
+}
+/* line 175, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003175}}
+.footer-right i.fa {
+  position: relative;
+  bottom: -2px;
+  left: 20px;
+}
+/* line 181, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003181}}
+.footer-right a {
+  color: #fff;
 }
 /*******************
 * Menu Definitions
@@ -275,7 +330,7 @@ p {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_floatingbox\.less}line{font-family:\000035}}
 .floatb {
   width: 100%;
-  positioN: relative;
+  position: relative;
 }
 /* line 9, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_floatingbox.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_floatingbox\.less}line{font-family:\000039}}
