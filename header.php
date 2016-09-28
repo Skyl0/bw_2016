@@ -1,15 +1,11 @@
 <?php
-function register_my_menus()
-{
-  register_nav_menus(
-    array(
-      'header-menu' => __('Header Menu'),
-      'extra-menu' => __('Extra Menu')
-    )
-  );
-}
-add_action('init', 'register_my_menus');
-
+/**
+ * Author: Marc Ernst (CEO)
+ * Company: SkyIT Webdesign - 64287 Darmstadt
+ * Description: WP-Header
+ * Version : 0.1.0
+ */
+include('./functions.php' );
 ?><!DOCTYPE html>
 <html lang="de">
 <head>
