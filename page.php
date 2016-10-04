@@ -19,7 +19,7 @@ get_header();
         </nav>
       </div>
       <div class="social">
-        <!-- TODO -->
+        <div class="addthis_inline_follow_toolbox"></div>
       </div>
     </div>
   </div>

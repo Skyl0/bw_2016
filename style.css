@@ -24,15 +24,15 @@
 }
 @font-face {
   font-family: 'open_sansitalic';
-  src: url('../fonts/opensans_italic_macroman/OpenSans-Italic-webfont.eot');
-  src: url('../fonts/opensans_italic_macroman/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans_italic_macroman/OpenSans-Italic-webfont.woff') format('woff'), url('../fonts/opensans_italic_macroman/OpenSans-Italic-webfont.ttf') format('truetype'), url('../fonts/opensans_italic_macroman/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+  src: url('assets/fonts/opensans_italic_macroman/OpenSans-Italic-webfont.eot');
+  src: url('assets/fonts/opensans_italic_macroman/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/opensans_italic_macroman/OpenSans-Italic-webfont.woff') format('woff'), url('assets/fonts/opensans_italic_macroman/OpenSans-Italic-webfont.ttf') format('truetype'), url('assets/fonts/opensans_italic_macroman/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'open_sansbold';
-  src: url('../fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot');
-  src: url('../fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans_bold_macroman/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/opensans_bold_macroman/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/opensans_bold_macroman/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+  src: url('assets/fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot');
+  src: url('assets/fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/opensans_bold_macroman/OpenSans-Bold-webfont.woff') format('woff'), url('assets/fonts/opensans_bold_macroman/OpenSans-Bold-webfont.ttf') format('truetype'), url('assets/fonts/opensans_bold_macroman/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -337,6 +337,53 @@ p {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_menu\.less}line{font-family:\0000376}}
 #bottom .extra-menu ul a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+}
+/* line 3, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_gallery.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_gallery\.less}line{font-family:\000033}}
+.ngg-pro-mosaic-container {
+  width: 880px !important;
+  margin-left: -5px !important;
+  margin-bottom: -15px !important;
+}
+/* line 9, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_gallery.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_gallery\.less}line{font-family:\000039}}
+.gallery_top_img {
+  margin-bottom: -10px;
+}
+/* line 3, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_events.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_events\.less}line{font-family:\000033}}
+.tribe-events-list-separator-month {
+  font-size: 18px;
+  font-family: open_sansbold;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  display: inline-block;
+}
+/* line 12, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_events.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_events\.less}line{font-family:\0000312}}
+.type-tribe_events {
+  border: 1px solid #333 !important;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+/* line 20, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_events.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_events\.less}line{font-family:\0000320}}
+.tribe-events-event-cost {
+  float: right;
+  border: 1px solid #ccc;
+  background-color: #333;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-family: open_sansbold;
+  font-size: 16px;
+}
+/* line 33, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_events.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_events\.less}line{font-family:\0000333}}
+.type-tribe_events h2.tribe-events-list-event-title {
+  margin-top: 5px;
 }
 /************************
 * Floatingbox Definitions
