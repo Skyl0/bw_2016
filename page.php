@@ -3,7 +3,8 @@
 * Template Name: follow
 */
 get_header();
-?><body class="follow">
+?>
+<body class="follow">
 <div id="header">
   <div id="top">
     <div class="wrapper">
@@ -19,6 +20,13 @@ get_header();
       </div>
       <div class="social">
         <!-- TODO -->
+      </div>
+    </div>
+  </div>
+  <div id="breadcrumb">
+    <div class="wrapper">
+      <div class="col-sm-12">
+        <? echo the_title() ?>
       </div>
     </div>
   </div>
