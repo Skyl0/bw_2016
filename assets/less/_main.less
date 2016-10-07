@@ -13,6 +13,14 @@ html {
   box-sizing: inherit;
 }
 
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0px;
+}
+
 body {
   //background-color: @black;
   background-image: url('./assets/images/komposit_1.jpg');

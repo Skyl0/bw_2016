@@ -1,0 +1,1 @@
+<div class="blog-back"><a href="<? echo home_url() . '/blog' ?>">Zur&uuml;ck zur Blogübersicht</a></div>

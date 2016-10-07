@@ -26,7 +26,7 @@ get_header();
   <div id="breadcrumb">
     <div class="wrapper">
       <div class="col-sm-12">
-        Blog
+        Blogkategorie: <? single_cat_title() ?>
       </div>
     </div>
   </div>
@@ -34,6 +34,7 @@ get_header();
     <div class="wrapper">
       <div class="col-sm-12">
         <div class="inner">
+          <? get_template_part('partials/back_to_blog') ?>
           <?php
           if (have_posts()) :
             while (have_posts()): the_post();
@@ -42,7 +43,7 @@ get_header();
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                   <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                   <p><? the_content(); ?></p>
-                  <? get_template_part( 'partials/author_categories' ) ?>
+                  <? get_template_part('partials/author_categories') ?>
                 </div>
               </div>
             <? endwhile; ?>

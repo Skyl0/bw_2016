@@ -39,7 +39,7 @@ get_header();
     <div class="wrapper">
       <div class="col-sm-12">
         <div class="inner">
-          <div class="blog-back"><a href="./blog">Zur&uuml;ck zur Blogübersicht</a></div>
+          <? get_template_part('partials/back_to_blog'); ?>
           <?php
           if (have_posts()) :
             while (have_posts()): the_post();

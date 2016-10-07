@@ -1,7 +1,8 @@
 // BLOG
-.author-time-info {
+.author-time-info, .categories {
   font-size: 12px;
   font-family: @italic;
+  margin-bottom: 5px;
 }
 
 .all-blog-post {
@@ -13,5 +14,32 @@
 .all-blog-post {
   h2 {
     margin-top: 0;
+  }
+}
+
+.category-select-wrapper {
+  margin-bottom: 10px;
+}
+
+.category-select-wrapper {
+  .category-select-header {
+    font-family: @bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  .form-control {
+    width: 33%;
+  }
+
+  input, select {
+    float: left;
+    background-color: @darkgrey;
+    color: white;
+  }
+
+  input {
+    margin-left: 5px;
   }
 }
