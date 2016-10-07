@@ -279,6 +279,20 @@ p {
 .footer-right a {
   color: #fff;
 }
+/*****************
+ * CONTENT COLUMN
+ *****************/
+/* line 223, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003223}}
+.one_half {
+  padding-right: 5px;
+}
+/* line 227, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_main\.less}line{font-family:\00003227}}
+.one_half.last_column {
+  padding-left: 5px;
+  padding-right: 0px;
+}
 /*******************
 * Menu Definitions
 ********************/
