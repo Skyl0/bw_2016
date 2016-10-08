@@ -46,7 +46,7 @@ get_header();
               </div>
               <? get_template_part('partials/author_categories') ?>
             <? endwhile; ?>
-            <div class="navigation">
+            <div class="blog-navigation">
               <?
               //fetch prev link
               ob_start();

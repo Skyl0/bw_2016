@@ -50,7 +50,7 @@ get_header();
             wp_reset_postdata(); ?>
           <?php endif; ?>
           <? get_template_part('partials/back_to_blog') ?>
-          <div class="navigation">
+          <div class="blog-navigation">
             <span class="newer"><?php previous_posts_link(); ?></span>
             <span class="older"><?php next_posts_link(); ?></span>
             <i class="fa fa-chevron-left" aria-hidden="true"></i> Ältere Beiträge | Neuere Beiträge <i class="fa fa-chevron-right" aria-hidden="true"></i>

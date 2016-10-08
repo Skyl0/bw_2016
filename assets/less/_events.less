@@ -2,11 +2,17 @@
 
 .tribe-events-list-separator-month {
   //Monatstrenner
-  font-size: 24px;
-  font-family: @bold;
+  font-size: 32px;
+  //text-transform: uppercase;
+  font-family: @regular;
   margin-bottom: 15px;
   margin-top: 0px;
   display: inline-block;
+
+}
+
+.tribe-events-list-separator-month > span:first-letter {
+  font-size: 40px;
 }
 
 .type-tribe_events {
@@ -14,7 +20,7 @@
   border: 1px solid @darkgrey !important;
   padding: 10px 10px 40px;
   position: relative;
-  margin : 10px -10px 20px -10px;
+  margin: 10px -10px 20px -10px;
   background-color: rgba(50, 50, 50, 0.5);
 }
 
@@ -30,6 +36,7 @@
   font-family: @bold;
   font-size: 16px;
 }
+
 .type-tribe_events {
   h2.tribe-events-list-event-title {
     margin-top: 5px;
@@ -37,7 +44,7 @@
 }
 
 #tribe-events-bar {
-  display:none;
+  display: none;
 }
 
 .tribe-event-schedule-details {
