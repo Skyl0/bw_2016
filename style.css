@@ -36,6 +36,27 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'robotoregular';
+  src: url('assets/fonts/roboto-regular/Roboto-Regular-webfont.eot');
+  src: url('assets/fonts/roboto-regular/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/roboto-regular/Roboto-Regular-webfont.woff') format('woff'), url('assets/fonts/roboto-regular/Roboto-Regular-webfont.ttf') format('truetype'), url('assets/fonts/roboto-regular/Roboto-Regular-webfont.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'colaborate-regularregular';
+  src: url('assets/fonts/colaborate_regular_macroman/ColabReg-webfont.eot');
+  src: url('assets/fonts/colaborate_regular_macroman/ColabReg-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/colaborate_regular_macroman/ColabReg-webfont.woff') format('woff'), url('assets/fonts/colaborate_regular_macroman/ColabReg-webfont.ttf') format('truetype'), url('assets/fonts/colaborate_regular_macroman/ColabReg-webfont.svg#colaborate-regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'aaarghnormal';
+  src: url('assets/fonts/aaargh_normal_macroman/Aaargh-webfont.eot');
+  src: url('assets/fonts/aaargh_normal_macroman/Aaargh-webfont.eot?#iefix') format('embedded-opentype'), url('assets/fonts/aaargh_normal_macroman/Aaargh-webfont.woff') format('woff'), url('assets/fonts/aaargh_normal_macroman/Aaargh-webfont.ttf') format('truetype'), url('assets/fonts/aaargh_normal_macroman/Aaargh-webfont.svg#aaarghnormal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /***********************
 * General Definitions
 ************************/
@@ -67,7 +88,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family: open_sansregular, Arial, sans-serif;
+  font-family: opensans_regular, Arial, sans-serif;
   overflow-x: hidden;
 }
 /* line 35, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_main.less */
@@ -337,7 +358,7 @@ a:hover {
 /* line 7, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_menu.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_menu\.less}line{font-family:\000037}}
 .mainnav {
-  font-family: open_sansregular, Arial, sans-serif;
+  font-family: opensans_regular, Arial, sans-serif;
   height: 50px;
   letter-spacing: 1px;
   font-size: 18px;
@@ -429,7 +450,7 @@ a:hover {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_events\.less}line{font-family:\000033}}
 .tribe-events-list-separator-month {
   font-size: 18px;
-  font-family: open_sansbold;
+  font-family: opensans_bold;
   margin-bottom: 15px;
   margin-top: 5px;
   display: inline-block;
@@ -453,7 +474,7 @@ a:hover {
   top: 10px;
   right: 10px;
   padding: 10px;
-  font-family: open_sansbold;
+  font-family: opensans_bold;
   font-size: 16px;
 }
 /* line 34, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_events.less */
@@ -551,17 +572,15 @@ a:hover {
 .author-time-info,
 .categories {
   font-size: 12px;
-  font-family: open_sansitalic;
+  font-family: opensans_italic;
   margin-bottom: 5px;
 }
 /* line 8, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_blog.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_blog\.less}line{font-family:\000038}}
 .all-blog-post {
-  border: 1px solid #333 !important;
   padding: 10px;
   position: relative;
-  margin: -10px -10px 30px -10px;
-  background-color: rgba(50, 50, 50, 0.5);
+  margin: 0px -10px 0px -10px;
 }
 /* line 17, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_blog.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_blog\.less}line{font-family:\0000317}}
@@ -581,7 +600,7 @@ a:hover {
 /* line 31, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_blog.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_blog\.less}line{font-family:\0000331}}
 .category-select-wrapper .category-select-header {
-  font-family: open_sansbold;
+  font-family: opensans_bold;
   font-size: 16px;
   margin-bottom: 5px;
   display: inline-block;
@@ -621,4 +640,11 @@ a:hover {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_blog\.less}line{font-family:\0000367}}
 .older .fa {
   margin-left: 5px;
+}
+/* line 73, C:\Users\theSkylo\Desktop\bw_2016\template\bw_2016\assets\less\_blog.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/theSkylo\/Desktop\/bw_2016\/template\/bw_2016\/assets\/less\/_blog\.less}line{font-family:\0000373}}
+.blog-line .line {
+  display: block;
+  margin: 10px 15% 10px 15%;
+  border-bottom: 2px dashed #333;
 }
