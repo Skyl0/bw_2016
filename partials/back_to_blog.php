@@ -1,1 +1,1 @@
-<div class="blog-back"><a href="<? echo home_url() . '/blog' ?>">Zur&uuml;ck zur Blogübersicht</a></div>
+<div class="blog-back"><i class="fa fa-chevron-up" aria-hidden="true"></i> <a href="<? echo home_url() . '/blog' ?>">zur&uuml;ck zur Blogübersicht</a></div>

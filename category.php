@@ -32,7 +32,6 @@ get_header();
     <div class="wrapper">
       <div class="col-sm-12">
         <div class="inner">
-          <? get_template_part('partials/back_to_blog') ?>
           <?php
           if (have_posts()) :
             while (have_posts()): the_post();
@@ -50,6 +49,7 @@ get_header();
               <span class="older"><?php next_posts_link(); ?></span>
             </div>
           <?php endif; ?>
+          <? get_template_part('partials/back_to_blog') ?>
         </div>
       </div>
     </div>

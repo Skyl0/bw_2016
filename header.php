@@ -33,5 +33,5 @@
   <link rel="mask-icon" href="<? echo get_template_directory_uri() ?>/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 </head><?
-$debug = false;
+$debug = true;
 ?>

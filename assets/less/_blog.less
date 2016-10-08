@@ -6,9 +6,11 @@
 }
 
 .all-blog-post {
-  border: 1px solid @darkgrey;
-  margin-bottom: 20px;
-  padding: 15px;
+  border: 1px solid @darkgrey !important;
+  padding: 10px;
+  position: relative;
+  margin: -10px -10px 30px -10px;
+  background-color: rgba(50, 50, 50, 0.5);
 }
 
 .all-blog-post {
@@ -17,8 +19,12 @@
   }
 }
 
+.post {
+  width: 680px;
+}
+
 .category-select-wrapper {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .category-select-wrapper {
@@ -40,6 +46,25 @@
   }
 
   input {
+    margin-left: 5px;
+  }
+}
+
+.blog-back {
+  display: inline-block;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+}
+
+.newer {
+  .fa {
+    margin-right: 5px;
+  }
+}
+
+.older {
+  .fa {
     margin-left: 5px;
   }
 }

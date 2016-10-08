@@ -37,21 +37,33 @@ get_header();
     <div class="wrapper">
       <div class="col-sm-12">
         <div class="inner">
-          <? get_template_part('partials/back_to_blog'); ?>
           <?php
           if (have_posts()) :
             while (have_posts()): the_post();
               ?>
               <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <p><? the_content(); ?></p>
+                <? the_content(); ?>
               </div>
-              <? get_template_part( 'partials/author_categories' ) ?>
+              <? get_template_part('partials/author_categories') ?>
             <? endwhile; ?>
             <div class="navigation">
-              <span class="newer"><?php previous_post_link(); ?></span>
-              <span class="older"><?php next_post_link(); ?></span>
+              <?
+              //fetch prev link
+              ob_start();
+              previous_post_link('<i class="fa fa-chevron-left" aria-hidden="true"></i> %link');
+              $previous_link = ob_get_clean();
+              //fetch next link
+              ob_start();
+              next_post_link('%link <i class="fa fa-chevron-right" aria-hidden="true"></i>');
+              $next_link = ob_get_clean();
+              ?>
+              <span
+                class="newer"><? if ($previous_link) echo $previous_link; ?></span>
+              <? if ($next_link && $previous_link) echo ' | '; ?>
+              <span
+                class="older"><? if ($next_link) echo $next_link; ?></span>
             </div>
+            <? get_template_part('partials/back_to_blog'); ?>
           <?php endif; ?>
         </div>
       </div>
