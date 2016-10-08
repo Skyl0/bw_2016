@@ -13,6 +13,7 @@ get_header();
 <div id="header">
   <div id="top">
     <div class="wrapper">
+      <? get_template_part('partials/social_buttons'); ?>
       <div id="logo">
         <a href="<?php echo get_site_url(); ?>">
           <img src="<? echo get_template_directory_uri() ?>/assets/images/logo100px.png" alt="alt logo"/>
@@ -22,9 +23,6 @@ get_header();
         <nav>
           <?php wp_nav_menu(array('name' => 'hauptmenue', 'theme_location' => 'header-menu')); ?>
         </nav>
-      </div>
-      <div class="social">
-        <div class="addthis_inline_follow_toolbox"></div>
       </div>
     </div>
   </div>

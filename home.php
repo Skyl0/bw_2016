@@ -4,10 +4,11 @@
 */
 get_header();
 ?>
-<body class="follow">
+<body class="follow blog">
 <div id="header">
   <div id="top">
     <div class="wrapper">
+      <? get_template_part('partials/social_buttons'); ?>
       <div id="logo">
         <a href="<?php echo get_site_url(); ?>">
           <img src="<? echo get_template_directory_uri() ?>/assets/images/logo100px.png" alt="alt logo"/>
@@ -17,9 +18,6 @@ get_header();
         <nav>
           <?php wp_nav_menu(array('name' => 'hauptmenue', 'theme_location' => 'header-menu')); ?>
         </nav>
-      </div>
-      <div class="social">
-        <div class="addthis_inline_follow_toolbox"></div>
       </div>
     </div>
   </div>
@@ -34,7 +32,7 @@ get_header();
     <div class="wrapper">
       <div class="col-sm-12">
         <div class="inner">
-        <? get_template_part('partials/select_categories'); ?>
+          <? get_template_part('partials/select_categories'); ?>
           <?php
           if (have_posts()) :
             while (have_posts()): the_post();
@@ -43,7 +41,7 @@ get_header();
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                   <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                   <p><? the_content(); ?></p>
-                  <? get_template_part( 'partials/author_categories' ) ?>
+                  <? get_template_part('partials/author_categories') ?>
                 </div>
               </div>
             <? endwhile; ?>

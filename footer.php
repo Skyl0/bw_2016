@@ -37,6 +37,8 @@
     </div>
   </div>
 </div>
+<!-- external JS -->
+
 <!-- internal JS -->
 <script src="<? echo get_template_directory_uri() ?>/assets/js/bootstrap.min.js"></script>
 <!-- self written JS -->
