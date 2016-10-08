@@ -32,19 +32,9 @@ get_header();
     <div class="wrapper">
       <div class="col-sm-12">
         <div class="inner">
-          <?
-          // The Query
-          $posts_per_page = 4;
-          $args = array(
-            'posts_per_page' => $posts_per_page,
-            'category' => $cat
-          );
-          $the_query = new WP_Query($args);
-          $i = 0;
-          ?>
           <?php
-          if ($the_query->have_posts()) :
-            while ($the_query->have_posts()): $the_query->the_post();
+          if (have_posts()) :
+            while (have_posts()): the_post();
               ?>
               <div class="all-blog-post">
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -53,15 +43,18 @@ get_header();
                   <? get_template_part('partials/author_categories') ?>
                 </div>
               </div>
-              <? if ($i < $posts_per_page) : ?>
-                <div class="blog-line">
-                  <div class="line"></div>
-                </div>
-              <? endif; ?>
+              <div class="blog-line">
+                <div class="line"></div>
+              </div>
             <? endwhile;
             wp_reset_postdata(); ?>
           <?php endif; ?>
           <? get_template_part('partials/back_to_blog') ?>
+          <div class="navigation">
+            <span class="newer"><?php previous_posts_link(); ?></span>
+            <span class="older"><?php next_posts_link(); ?></span>
+            <i class="fa fa-chevron-left" aria-hidden="true"></i> Ältere Beiträge | Neuere Beiträge <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
     </div>

@@ -32,11 +32,7 @@ get_header();
     <div class="wrapper">
       <div class="col-sm-12">
         <div class="inner">
-          <? get_template_part('partials/select_categories');
-          // The Query
-          $i = 0;
-          $posts_per_page = 3;
-          ?>
+          <? get_template_part('partials/select_categories'); ?>
           <?php
           if (have_posts()) :
             while (have_posts()): the_post();
@@ -49,16 +45,14 @@ get_header();
                   <? get_template_part('partials/author_categories') ?>
                 </div>
               </div>
-              <? if ($i != $posts_per_page) : ?>
-                <div class="blog-line">
-                  <div class="line"></div>
-                </div>
-              <? endif; ?>
-            <? endwhile;
-            wp_reset_postdata(); ?>
+              <div class="blog-line">
+                <div class="line"></div>
+              </div>
+            <? endwhile; ?>
             <div class="navigation">
               <span class="newer"><?php previous_posts_link(); ?></span>
               <span class="older"><?php next_posts_link(); ?></span>
+              <i class="fa fa-chevron-left" aria-hidden="true"></i> Ältere Beiträge | Neuere Beiträge <i class="fa fa-chevron-right" aria-hidden="true"></i>
             </div>
           <?php endif; ?>
         </div>
