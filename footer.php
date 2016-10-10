@@ -26,9 +26,9 @@
 </div>
 <footer><div id="footer">
   <div class="wrapper">
-    <div class="col-sm-6 footer-left"><i class="fa fa-copyright" aria-hidden="true"></i> Bastian Werner 2016</div>
+    <div class="col-sm-6 footer-left"><i class="fa fa-copyright" aria-hidden="true"></i> Bastian Werner <? echo date(Y); ?> | Alle Rechte vorbehalten</div>
     <div class="col-sm-6 footer-right">
-      <a href="./kontakt" class="mail-link">
+      <a href="<? echo home_url() . "/kontakt"?>" class="mail-link">
         <i class="fa fa-envelope" aria-hidden="true"></i>
       </a>
       <a href="#" class="scrollup-link">

@@ -19,4 +19,39 @@ $( document ).ready(function() {
     $('body').animate({scrollTop : 0 },'slow');
   });
 
+  // Gallery Thumblinks
+
+  var pic1 = '.preview_1';
+  var alt1 = $(pic1).attr("alt");
+
+  var pic2 = '.preview_2';
+  var alt2 = $(pic2).attr("alt");
+
+  var pic3 = '.preview_3';
+  var alt3 = $(pic3).attr("alt");
+
+  var pic4 = '.preview_4';
+  var alt4 = $(pic4).attr("alt");
+
+  var pic5 = '.preview_5';
+  var alt5 = $(pic5).attr("alt");
+
+  var pic6 = '.preview_6';
+  var alt6 = $(pic6).attr("alt");
+
+  var pic7 = '.preview_7';
+  var alt7 = $(pic7).attr("alt");
+
+  var pic8 = '.preview_8';
+  var alt8 = $(pic8).attr("alt");
+
+  $(pic1).parent().append('<div class="preview-overlay">' + alt1 + '</div>');
+  $(pic2).parent().append('<div class="preview-overlay">' + alt2 + '</div>');
+  $(pic3).parent().append('<div class="preview-overlay">' + alt3 + '</div>');
+  $(pic4).parent().append('<div class="preview-overlay">' + alt4 + '</div>');
+  $(pic5).parent().append('<div class="preview-overlay">' + alt5 + '</div>');
+  $(pic6).parent().append('<div class="preview-overlay">' + alt6 + '</div>');
+  $(pic7).parent().append('<div class="preview-overlay">' + alt7 + '</div>');
+  $(pic8).parent().append('<div class="preview-overlay">' + alt8 + '</div>');
+
 });

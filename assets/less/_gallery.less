@@ -9,3 +9,37 @@
 .gallery_top_img {
   margin-bottom: -10px;
 }
+
+#main a:hover .preview-overlay {
+  opacity: 1;
+}
+
+.preview-overlay {
+  display: block;
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  height: 280px;
+  line-height: 280px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.66);
+  font-family: @regular;
+  opacity: 0;
+  font-size: 20px;
+  transition: all 500ms;
+}
+
+.last_column .preview-overlay {
+  left: 5px;
+}
+
+.inner .one_half {
+  position: relative;
+  //  vertical-align: middle;
+}
+
+.preview_1, .preview_2, .preview_3, .preview_4, .preview_5, .preview_6, .preview_7, .preview_8 {
+  margin-bottom: 10px;
+}
