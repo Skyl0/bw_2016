@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-  'use strict';
+  // my js version 0.9.3
 
   // Floating Box Float IN
   var floatbox = 'div#float-box-1';

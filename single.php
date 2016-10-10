@@ -11,6 +11,7 @@ get_header();
 ?>
 <body class="follow">
 <div id="header">
+  <header>
   <div id="top">
     <div class="wrapper">
       <? get_template_part('partials/social_buttons'); ?>
@@ -26,6 +27,7 @@ get_header();
       </div>
     </div>
   </div>
+  </header>
   <div id="breadcrumb">
     <div class="wrapper">
       <div class="col-sm-12">

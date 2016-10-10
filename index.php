@@ -10,26 +10,28 @@ get_header();
   </script>
   <body class="first">
   <div id="header">
-    <div id="top">
-      <div class="wrapper">
-        <? get_template_part('partials/social_buttons'); ?>
-        <div id="logo">
-          <a href="<?php echo get_site_url(); ?>">
-            <img src="<? echo get_template_directory_uri() ?>/assets/images/logo100px.png" alt="alt logo"/>
-          </a>
-        </div>
-        <div class="mainnav">
-          <nav>
-            <?php wp_nav_menu(array('name' => 'hauptmenue', 'theme_location' => 'header-menu')); ?>
-          </nav>
+    <header>
+      <div id="top">
+        <div class="wrapper">
+          <? get_template_part('partials/social_buttons'); ?>
+          <div id="logo">
+            <a href="<?php echo get_site_url(); ?>">
+              <img src="<? echo get_template_directory_uri() ?>/assets/images/logo100px.png" alt="alt logo"/>
+            </a>
+          </div>
+          <div class="mainnav">
+            <nav>
+              <?php wp_nav_menu(array('name' => 'hauptmenue', 'theme_location' => 'header-menu')); ?>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
     <div class="floatb">
       <div class="wrapper">
         <div id="float-box-1" class="floatingbox float-hide">
           <!-- excluded <h1>the_title('');</h1> -->
-          <div class="main-content">
+         <article><div class="main-content">
             <?php
             if (have_posts()) {
               while (have_posts()) {
@@ -37,7 +39,7 @@ get_header();
                 the_content();
               }
             } ?>
-          </div>
+          </div></article>
         </div>
       </div>
     </div>
