@@ -30,7 +30,7 @@
   > li {
     display: inline-block;
     padding: 3px 0;
-    position: relative;
+   // position: relative;
     margin-right: 15px;
     transition: all 500ms;
     a {
@@ -53,7 +53,7 @@
     }
   }
 
-  > li.current-menu-item .sub-menu , > li.current-menu-parent .sub-menu {
+  > li.current-menu-item .sub-menu, > li.current-menu-parent .sub-menu {
     display: inline-block;
   }
 
@@ -74,7 +74,7 @@
 }
 
 #bottom .extra-menu .sub-menu {
-  display:none;
+  display: none;
 }
 
 #bottom .extra-menu ul {
@@ -105,7 +105,9 @@ nav {
     font-size: 14px;
     top: 30px;
     padding-left: 0px;
-    left: 0px;
+    padding-top: 4px;
+    left: 40px;
+    z-index: 1000;
   }
 
   ul.sub-menu {
@@ -118,5 +120,14 @@ nav {
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
   }
+}
 
+ul.sub-menu {
+  > li {
+    //display: inline-block;
+    float: left;
+    margin-right: 8px;
+    //list-style-type: none;
+    //  position: relative;
+  }
 }

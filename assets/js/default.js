@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
   // Gallery Thumblinks
 
-  var pic1 = '.preview_1';
+ /* var pic1 = '.preview_1';
   var alt1 = $(pic1).attr("alt");
 
   var pic2 = '.preview_2';
@@ -52,6 +52,10 @@ $( document ).ready(function() {
   $(pic5).parent().append('<div class="preview-overlay">' + alt5 + '</div>');
   $(pic6).parent().append('<div class="preview-overlay">' + alt6 + '</div>');
   $(pic7).parent().append('<div class="preview-overlay">' + alt7 + '</div>');
-  $(pic8).parent().append('<div class="preview-overlay">' + alt8 + '</div>');
+  $(pic8).parent().append('<div class="preview-overlay">' + alt8 + '</div>'); */
+
+ $('img.preview-gal').each(function () {
+   $(this).parent().append('<div class="preview-overlay">' + $(this).attr("alt") + '</div>');
+ });
 
 });

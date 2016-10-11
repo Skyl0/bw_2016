@@ -320,6 +320,13 @@ a:hover {
   opacity: 0.9;
   top: -7px;
 }
+/**********
+ * PANELS *
+ **********/
+/* line 293, C:\_phpstorm_projects\bw_2016\assets\less\_main.less */
+.panel-link {
+  font-size: 24px;
+}
 /*******************
 * Menu Definitions
 ********************/
@@ -352,7 +359,6 @@ a:hover {
 .mainnav ul.menu > li {
   display: inline-block;
   padding: 3px 0;
-  position: relative;
   margin-right: 15px;
   transition: all 500ms;
 }
@@ -415,15 +421,22 @@ nav ul.sub-menu {
   font-size: 14px;
   top: 30px;
   padding-left: 0px;
-  left: 0px;
+  padding-top: 4px;
+  left: 40px;
+  z-index: 1000;
 }
-/* line 113, C:\_phpstorm_projects\bw_2016\assets\less\_menu.less */
+/* line 115, C:\_phpstorm_projects\bw_2016\assets\less\_menu.less */
 nav ul.sub-menu a {
   padding: 3px 0;
 }
-/* line 117, C:\_phpstorm_projects\bw_2016\assets\less\_menu.less */
+/* line 119, C:\_phpstorm_projects\bw_2016\assets\less\_menu.less */
 nav ul.sub-menu li.current_page_item a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 126, C:\_phpstorm_projects\bw_2016\assets\less\_menu.less */
+ul.sub-menu > li {
+  float: left;
+  margin-right: 8px;
 }
 /* line 3, C:\_phpstorm_projects\bw_2016\assets\less\_gallery.less */
 .ngg-pro-mosaic-container {
@@ -447,8 +460,8 @@ nav ul.sub-menu li.current_page_item a {
   top: 0;
   left: 0;
   width: 430px;
-  height: 280px;
-  line-height: 280px;
+  height: 430px;
+  line-height: 430px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.66);
   font-family: open_sansregular;
@@ -465,14 +478,7 @@ nav ul.sub-menu li.current_page_item a {
   position: relative;
 }
 /* line 43, C:\_phpstorm_projects\bw_2016\assets\less\_gallery.less */
-.preview_1,
-.preview_2,
-.preview_3,
-.preview_4,
-.preview_5,
-.preview_6,
-.preview_7,
-.preview_8 {
+.preview-gal {
   margin-bottom: 10px;
 }
 /* line 3, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
@@ -524,21 +530,25 @@ nav ul.sub-menu li.current_page_item a {
   z-index: 1;
   opacity: 0.4;
 }
-/* line 61, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
+/* line 59, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
+.tribe-events-schedule span.tribe-events-cost {
+  display: none;
+}
+/* line 65, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
 #tribe-events-header {
   margin: 0;
 }
-/* line 65, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
+/* line 69, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
 .tribe-events-page-title {
   display: none !important;
 }
-/* line 71, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
+/* line 75, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
 .widget-panel-0 ol.tribe-list-widget {
   list-style-type: none;
   list-style-position: outside;
   padding: 0;
 }
-/* line 77, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
+/* line 81, C:\_phpstorm_projects\bw_2016\assets\less\_events.less */
 .widget-panel-0 .type-tribe_events {
   margin: 0 0 10px;
   padding: 5px 10px 5px 10px;
@@ -557,7 +567,7 @@ nav ul.sub-menu li.current_page_item a {
   position: absolute;
   top: 100px;
   right: 0px;
-  width: 600px;
+  width: 910px;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 15px;
   display: inline-block;
