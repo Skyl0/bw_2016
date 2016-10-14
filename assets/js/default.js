@@ -2,10 +2,13 @@
  * Author: Marc Ernst
  * Company: SkyIT Webdesign
  * Date: 10/2016
- * Version 1.0.0
+ * Version 1.0.1
  */
 
 $(document).ready(function () {
+
+// Add lightbox links
+  $('.galleria-info-text').append('<div class="gallery-link-bw"><a href="mylink">MyLink</a></div>');
 
   // Frontpage Panels
 
@@ -18,8 +21,6 @@ $(document).ready(function () {
       max = $(this).parent().height();
     }
   });
-
-  console.log("Max height :" + max); // TODO DELETE
 
   $(panels).each(function () {
     $(this).parent().height(max);
