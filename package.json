@@ -1,0 +1,25 @@
+{
+  "name": "bw_2016",
+  "version": "1.0.0",
+  "description": "bastianw.de wordpress",
+  "main": "gulp.js",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp-less": "^3.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skyl0/bw_2016.git"
+  },
+  "author": "Marc Ernst",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skyl0/bw_2016/issues"
+  },
+  "homepage": "https://github.com/Skyl0/bw_2016#readme"
+}
